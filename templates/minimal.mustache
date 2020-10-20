@@ -1,145 +1,238 @@
-" vim: ft=vim ts=2 foldmethod=marker
+" base16-{{scheme-name}} -- Vim color scheme
+" Author: {{scheme-author}}
+" Generated From: https://github.com/a-vrma/base16-vim
 
 hi clear
 
-if exists('syntax_on')
+if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = 'base16-{{scheme-slug}}'
+let g:colors_name = "base16-{{scheme-slug}}"
 
-" {{{1
-NonText          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Comment          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Constant         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Error            ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Identifier       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Ignore           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-PreProc          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Special          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Statement        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-String           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Todo             ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Type             ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Underlined       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-StatusLine       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-StatusLineNC     ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-VertSplit        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-TabLine          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-TabLineFill      ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-TabLineSel       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Title            ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-CursorLine       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-LineNr           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-CursorLineNr     ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-helpLeadBlank    ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-helpNormal       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Visual           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-VisualNOS        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Pmenu            ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-PmenuSbar        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-PmenuSel         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-PmenuThumb       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-FoldColumn       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Folded           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-WildMenu         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-SpecialKey       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-DiffAdd          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-DiffChange       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-DiffDelete       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-DiffText         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-IncSearch        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Search           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Directory        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-MatchParen       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-SpellBad         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE guisp=#ff0000
-SpellCap         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE guisp=#0000ff
-SpellLocal       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE guisp=#ff00ff
-SpellRare        ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE guisp=#00ffff
-ColorColumn      ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-SignColumn       ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-ErrorMsg         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-ModeMsg          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-MoreMsg          ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Question         ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-Cursor           ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-CursorColumn     ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-QuickFixLine     ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-StatusLineTerm   ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
-StatusLineTermNC ctermbg=15 ctermfg=8 cterm=NONE guibg=#ffffff guifg=#808080 gui=NONE
+" Terminal colors
+if has("nvim")
+  let g:terminal_color_0 =  "#{{base00-hex}}"
+  let g:terminal_color_1 =  "#{{base08-hex}}"
+  let g:terminal_color_2 =  "#{{base0B-hex}}"
+  let g:terminal_color_3 =  "#{{base0A-hex}}"
+  let g:terminal_color_4 =  "#{{base0D-hex}}"
+  let g:terminal_color_5 =  "#{{base0E-hex}}"
+  let g:terminal_color_6 =  "#{{base0C-hex}}"
+  let g:terminal_color_7 =  "#{{base05-hex}}"
+  let g:terminal_color_8 =  "#{{base03-hex}}"
+  let g:terminal_color_9 =  "#{{base08-hex}}"
+  let g:terminal_color_10 = "#{{base0B-hex}}"
+  let g:terminal_color_11 = "#{{base0A-hex}}"
+  let g:terminal_color_12 = "#{{base0D-hex}}"
+  let g:terminal_color_13 = "#{{base0E-hex}}"
+  let g:terminal_color_14 = "#{{base0C-hex}}"
+  let g:terminal_color_15 = "#{{base07-hex}}"
+  let g:terminal_color_background = g:terminal_color_0
+  let g:terminal_color_foreground = g:terminal_color_5
+  if &background == "light"
+    let g:terminal_color_background = g:terminal_color_7
+    let g:terminal_color_foreground = g:terminal_color_2
+  endif
+elseif has("terminal")
+  let g:terminal_ansi_colors = [
+      \ "#{{base00-hex}}",
+      \ "#{{base08-hex}}",
+      \ "#{{base0B-hex}}",
+      \ "#{{base0A-hex}}",
+      \ "#{{base0D-hex}}",
+      \ "#{{base0E-hex}}",
+      \ "#{{base0C-hex}}",
+      \ "#{{base05-hex}}",
+      \ "#{{base03-hex}}",
+      \ "#{{base08-hex}}",
+      \ "#{{base0B-hex}}",
+      \ "#{{base0A-hex}}",
+      \ "#{{base0D-hex}}",
+      \ "#{{base0E-hex}}",
+      \ "#{{base0C-hex}}",
+      \ "#{{base07-hex}}",
+  \]
+endif
+
+" {{{1 Need to do
+
+" ColorColumn
+" Comment
+" Conceal
+" Constant
+" Cursor
+" CursorColumn
+" CursorLine
+" CursorLineNr
+" DiffAdd
+" DiffChange
+" DiffDelete
+" DiffText
+" Directory
+" Error
+" ErrorMsg
+" FoldColumn
+" Folded
+" Function
+" Identifier
+" Ignore
+" IncSearch
+" LineNr
+" MatchParen
+" ModeMsg
+" MoreMsg
+" NonText
+" Normal
+" Pmenu
+" PmenuSbar
+" PmenuSel
+" PmenuThumb
+" PreProc
+" Question
+" QuickFixLine
+" Search
+" SignColumn
+" Special
+" SpecialKey
+" SpellBad
+" SpellCap
+" SpellLocal
+" SpellRare
+" Statement
+" StatusLine
+" StatusLineNC
+" StatusLineTerm
+" StatusLineTermNC
+" String
+" TabLine
+" TabLineFill
+" TabLineSel
+" Title
+" Todo
+" Type
+" Underlined
+" VertSplit
+" Visual
+" VisualNOS
+" WarningMsg
+" WildMenu
+" debugBreakpoint
+" debugPC
+" helpLeadBlank
+" helpNormal
+" signColumn
 
 " {{{1
 " Remeber attr is made up meant to mean gui= and cterm=
-" TODO: replace s:gui stuff
 
-Normal        guifg=s:gui05  guibg=s:gui00  ctermfg=07  ctermbg=00  {{!noop}}  {{!noop}}
-Bold          {{!noop}}      {{!noop}}      {{!noop}}   ctermbg=""  gui=bold   cterm=bold
-Debug         guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-Directory     guifg=s:gui0D  {{!noop}}      ctermfg=04  ctermbg=""  {{!noop}}  {{!noop}}
-Error         guifg=s:gui00  guibg=s:gui08  ctermfg=00  ctermbg=01  {{!noop}}  {{!noop}}
-ErrorMsg      guifg=s:gui08  guibg=s:gui00  ctermfg=01  ctermbg=00  {{!noop}}  {{!noop}}
-Exception     guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-FoldColumn    guifg=s:gui0C  guibg=s:gui01  ctermfg=06  ctermbg=10  {{!noop}}  {{!noop}}
-Folded        guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  {{!noop}}  {{!noop}}
-IncSearch     guifg=s:gui01  guibg=s:gui09  ctermfg=10  ctermbg=09  gui=none   cterm=none
-Italic        {{!noop}}      {{!noop}}      {{!noop}}   ctermbg=""  gui=none   cterm=none
-Macro         guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-MatchParen    {{!noop}}      guibg=s:gui03  {{!noop}}   ctermbg=08  {{!noop}}  {{!noop}}
-ModeMsg       guifg=s:gui0B  {{!noop}}      ctermfg=02  ctermbg=""  {{!noop}}  {{!noop}}
-MoreMsg       guifg=s:gui0B  {{!noop}}      ctermfg=02  ctermbg=""  {{!noop}}  {{!noop}}
-Question      guifg=s:gui0D  {{!noop}}      ctermfg=04  ctermbg=""  {{!noop}}  {{!noop}}
-Search        guifg=s:gui01  guibg=s:gui0A  ctermfg=10  ctermbg=03  {{!noop}}  {{!noop}}
-Substitute    guifg=s:gui01  guibg=s:gui0A  ctermfg=10  ctermbg=03  gui=none   cterm=none
-SpecialKey    guifg=s:gui03  {{!noop}}      ctermfg=08  ctermbg=""  {{!noop}}  {{!noop}}
-TooLong       guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-Underlined    guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-Visual        {{!noop}}      guibg=s:gui02  {{!noop}}   ctermbg=11  {{!noop}}  {{!noop}}
-VisualNOS     guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-WarningMsg    guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-WildMenu      guifg=s:gui08  guibg=s:gui0A  ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-Title         guifg=s:gui0D  {{!noop}}      ctermfg=04  ctermbg=""  gui=none   cterm=none
-Conceal       guifg=s:gui0D  guibg=s:gui00  ctermfg=04  ctermbg=00  {{!noop}}  {{!noop}}
-Cursor        guifg=s:gui00  guibg=s:gui05  ctermfg=00  ctermbg=07  {{!noop}}  {{!noop}}
-NonText       guifg=s:gui03  guibg=s:gui00  ctermfg=08  ctermbg=00  {{!noop}}  {{!noop}}
-LineNr        guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  {{!noop}}  {{!noop}}
-SignColumn    guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  {{!noop}}  {{!noop}}
-StatusLine    guifg=s:gui04  guibg=s:gui02  ctermfg=12  ctermbg=11  gui=none   cterm=none
-StatusLineNC  guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  gui=none   cterm=none
-VertSplit     guifg=s:gui02  guibg=s:gui02  ctermfg=11  ctermbg=11  gui=none   cterm=none
-ColorColumn   {{!noop}}      guibg=s:gui01  {{!noop}}   ctermbg=10  gui=none   cterm=none
-CursorColumn  {{!noop}}      guibg=s:gui01  {{!noop}}   ctermbg=10  gui=none   cterm=none
-CursorLine    {{!noop}}      guibg=s:gui01  {{!noop}}   ctermbg=10  gui=none   cterm=none
-CursorLineNr  guifg=s:gui04  guibg=s:gui01  ctermfg=12  ctermbg=10  {{!noop}}  {{!noop}}
-QuickFixLine  {{!noop}}      guibg=s:gui01  {{!noop}}   ctermbg=10  gui=none   cterm=none
-PMenu         guifg=s:gui05  guibg=s:gui01  ctermfg=07  ctermbg=10  gui=none   cterm=none
-PMenuSel      guifg=s:gui01  guibg=s:gui05  ctermfg=10  ctermbg=07  {{!noop}}  {{!noop}}
-TabLine       guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  gui=none   cterm=none
-TabLineFill   guifg=s:gui03  guibg=s:gui01  ctermfg=08  ctermbg=10  gui=none   cterm=none
-TabLineSel    guifg=s:gui0B  guibg=s:gui01  ctermfg=02  ctermbg=10  gui=none   cterm=none
-Boolean       guifg=s:gui09  {{!noop}}      ctermfg=09  ctermbg=""  {{!noop}}  {{!noop}}
-Character     guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-Comment       guifg=s:gui03  {{!noop}}      ctermfg=08  ctermbg=""  {{!noop}}  {{!noop}}
-Conditional   guifg=s:gui0E  {{!noop}}      ctermfg=05  ctermbg=""  {{!noop}}  {{!noop}}
-Constant      guifg=s:gui09  {{!noop}}      ctermfg=09  ctermbg=""  {{!noop}}  {{!noop}}
-Define        guifg=s:gui0E  {{!noop}}      ctermfg=05  ctermbg=""  gui=none   cterm=none
-Delimiter     guifg=s:gui0F  {{!noop}}      ctermfg=14  ctermbg=""  {{!noop}}  {{!noop}}
-Float         guifg=s:gui09  {{!noop}}      ctermfg=09  ctermbg=""  {{!noop}}  {{!noop}}
-Function      guifg=s:gui0D  {{!noop}}      ctermfg=04  ctermbg=""  {{!noop}}  {{!noop}}
-Identifier    guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  gui=none   cterm=none
-Include       guifg=s:gui0D  {{!noop}}      ctermfg=04  ctermbg=""  {{!noop}}  {{!noop}}
-Keyword       guifg=s:gui0E  {{!noop}}      ctermfg=05  ctermbg=""  {{!noop}}  {{!noop}}
-Label         guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
-Number        guifg=s:gui09  {{!noop}}      ctermfg=09  ctermbg=""  {{!noop}}  {{!noop}}
-Operator      guifg=s:gui05  {{!noop}}      ctermfg=07  ctermbg=""  gui=none   cterm=none
-PreProc       guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
-Repeat        guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
-Special       guifg=s:gui0C  {{!noop}}      ctermfg=06  ctermbg=""  {{!noop}}  {{!noop}}
-SpecialChar   guifg=s:gui0F  {{!noop}}      ctermfg=14  ctermbg=""  {{!noop}}  {{!noop}}
-Statement     guifg=s:gui08  {{!noop}}      ctermfg=01  ctermbg=""  {{!noop}}  {{!noop}}
-StorageClass  guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
-String        guifg=s:gui0B  {{!noop}}      ctermfg=02  ctermbg=""  {{!noop}}  {{!noop}}
-Structure     guifg=s:gui0E  {{!noop}}      ctermfg=05  ctermbg=""  {{!noop}}  {{!noop}}
-Tag           guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
-Todo          guifg=s:gui0A  guibg=s:gui01  ctermfg=03  ctermbg=10  {{!noop}}  {{!noop}}
-Type          guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  gui=none   cterm=none
-Typedef       guifg=s:gui0A  {{!noop}}      ctermfg=03  ctermbg=""  {{!noop}}  {{!noop}}
+" Editor colors
+Normal        guifg={{base05-hex}}  guibg={{base00-hex}}  ctermfg=07  ctermbg=00  {{!noop}}   {{!noop}}
+Bold          {{!noop}}             {{!noop}}             {{!noop}}   {{!noop}}   gui=bold    cterm=bold
+Debug         guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+Directory     guifg={{base0D-hex}}  {{!noop}}             ctermfg=04  {{!noop}}   {{!noop}}   {{!noop}}
+Error         guifg={{base00-hex}}  guibg={{base08-hex}}  ctermfg=00  ctermbg=01  {{!noop}}   {{!noop}}
+ErrorMsg      guifg={{base08-hex}}  guibg={{base00-hex}}  ctermfg=01  ctermbg=00  {{!noop}}   {{!noop}}
+Exception     guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+FoldColumn    guifg={{base0C-hex}}  guibg={{base01-hex}}  ctermfg=06  ctermbg=10  {{!noop}}   {{!noop}}
+Folded        guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  {{!noop}}   {{!noop}}
+IncSearch     guifg={{base01-hex}}  guibg={{base09-hex}}  ctermfg=10  ctermbg=09  gui=NONE    cterm=NONE
+Italic        {{!noop}}             {{!noop}}             {{!noop}}   {{!noop}}   gui=italic  cterm=italic
+Macro         guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+MatchParen    {{!noop}}             guibg={{base03-hex}}  {{!noop}}   ctermbg=08  {{!noop}}   {{!noop}}
+ModeMsg       guifg={{base0B-hex}}  {{!noop}}             ctermfg=02  {{!noop}}   {{!noop}}   {{!noop}}
+MoreMsg       guifg={{base0B-hex}}  {{!noop}}             ctermfg=02  {{!noop}}   {{!noop}}   {{!noop}}
+Question      guifg={{base0D-hex}}  {{!noop}}             ctermfg=04  {{!noop}}   {{!noop}}   {{!noop}}
+Search        guifg={{base01-hex}}  guibg={{base0A-hex}}  ctermfg=10  ctermbg=03  {{!noop}}   {{!noop}}
+Substitute    guifg={{base01-hex}}  guibg={{base0A-hex}}  ctermfg=10  ctermbg=03  gui=NONE    cterm=NONE
+SpecialKey    guifg={{base03-hex}}  {{!noop}}             ctermfg=08  {{!noop}}   {{!noop}}   {{!noop}}
+TooLong       guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+Underlined    guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+Visual        {{!noop}}             guibg={{base02-hex}}  {{!noop}}   ctermbg=11  {{!noop}}   {{!noop}}
+VisualNOS     guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+WarningMsg    guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+WildMenu      guifg={{base08-hex}}  guibg={{base0A-hex}}  ctermfg=01  {{!noop}}   {{!noop}}   {{!noop}}
+Title         guifg={{base0D-hex}}  {{!noop}}             ctermfg=04  {{!noop}}   gui=NONE    cterm=NONE
+Conceal       guifg={{base0D-hex}}  guibg={{base00-hex}}  ctermfg=04  ctermbg=00  {{!noop}}   {{!noop}}
+Cursor        guifg={{base00-hex}}  guibg={{base05-hex}}  ctermfg=00  ctermbg=07  {{!noop}}   {{!noop}}
+NonText       guifg={{base03-hex}}  guibg={{base00-hex}}  ctermfg=08  ctermbg=00  {{!noop}}   {{!noop}}
+LineNr        guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  {{!noop}}   {{!noop}}
+SignColumn    guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  {{!noop}}   {{!noop}}
+StatusLine    guifg={{base04-hex}}  guibg={{base02-hex}}  ctermfg=12  ctermbg=11  gui=NONE    cterm=NONE
+StatusLineNC  guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  gui=NONE    cterm=NONE
+VertSplit     guifg={{base02-hex}}  guibg={{base02-hex}}  ctermfg=11  ctermbg=11  gui=NONE    cterm=NONE
+ColorColumn   {{!noop}}             guibg={{base01-hex}}  {{!noop}}   ctermbg=10  gui=NONE    cterm=NONE
+CursorColumn  {{!noop}}             guibg={{base01-hex}}  {{!noop}}   ctermbg=10  gui=NONE    cterm=NONE
+CursorLine    {{!noop}}             guibg={{base01-hex}}  {{!noop}}   ctermbg=10  gui=NONE    cterm=NONE
+CursorLineNr  guifg={{base04-hex}}  guibg={{base01-hex}}  ctermfg=12  ctermbg=10  {{!noop}}   {{!noop}}
+QuickFixLine  {{!noop}}             guibg={{base01-hex}}  {{!noop}}   ctermbg=10  gui=NONE    cterm=NONE
+PMenu         guifg={{base05-hex}}  guibg={{base01-hex}}  ctermfg=07  ctermbg=10  gui=NONE    cterm=NONE
+PMenuSel      guifg={{base01-hex}}  guibg={{base05-hex}}  ctermfg=10  ctermbg=07  {{!noop}}   {{!noop}}
+TabLine       guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  gui=NONE    cterm=NONE
+TabLineFill   guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  gui=NONE    cterm=NONE
+TabLineSel    guifg={{base0B-hex}}  guibg={{base01-hex}}  ctermfg=02  ctermbg=10  gui=NONE    cterm=NONE
+
+" General language syntax
+Boolean       guifg={{base09-hex}}  {{!noop}}             ctermfg=09  {{!noop}}   {{!noop}}  {{!noop}}
+Character     guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}  {{!noop}}
+Comment       guifg={{base03-hex}}  {{!noop}}             ctermfg=08  {{!noop}}   {{!noop}}  {{!noop}}
+Conditional   guifg={{base0E-hex}}  {{!noop}}             ctermfg=05  {{!noop}}   {{!noop}}  {{!noop}}
+Constant      guifg={{base09-hex}}  {{!noop}}             ctermfg=09  {{!noop}}   {{!noop}}  {{!noop}}
+Define        guifg={{base0E-hex}}  {{!noop}}             ctermfg=05  {{!noop}}   gui=NONE   cterm=NONE
+Delimiter     guifg={{base0F-hex}}  {{!noop}}             ctermfg=14  {{!noop}}   {{!noop}}  {{!noop}}
+Float         guifg={{base09-hex}}  {{!noop}}             ctermfg=09  {{!noop}}   {{!noop}}  {{!noop}}
+Function      guifg={{base0D-hex}}  {{!noop}}             ctermfg=04  {{!noop}}   {{!noop}}  {{!noop}}
+Identifier    guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   gui=NONE   cterm=NONE
+Include       guifg={{base0D-hex}}  {{!noop}}             ctermfg=04  {{!noop}}   {{!noop}}  {{!noop}}
+Keyword       guifg={{base0E-hex}}  {{!noop}}             ctermfg=05  {{!noop}}   {{!noop}}  {{!noop}}
+Label         guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+Number        guifg={{base09-hex}}  {{!noop}}             ctermfg=09  {{!noop}}   {{!noop}}  {{!noop}}
+Operator      guifg={{base05-hex}}  {{!noop}}             ctermfg=07  {{!noop}}   gui=NONE   cterm=NONE
+PreProc       guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+Repeat        guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+Special       guifg={{base0C-hex}}  {{!noop}}             ctermfg=06  {{!noop}}   {{!noop}}  {{!noop}}
+SpecialChar   guifg={{base0F-hex}}  {{!noop}}             ctermfg=14  {{!noop}}   {{!noop}}  {{!noop}}
+Statement     guifg={{base08-hex}}  {{!noop}}             ctermfg=01  {{!noop}}   {{!noop}}  {{!noop}}
+StorageClass  guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+String        guifg={{base0B-hex}}  {{!noop}}             ctermfg=02  {{!noop}}   {{!noop}}  {{!noop}}
+Structure     guifg={{base0E-hex}}  {{!noop}}             ctermfg=05  {{!noop}}   {{!noop}}  {{!noop}}
+Tag           guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+Todo          guifg={{base0A-hex}}  guibg={{base01-hex}}  ctermfg=03  ctermbg=10  {{!noop}}  {{!noop}}
+Type          guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   gui=NONE   cterm=NONE
+Typedef       guifg={{base0A-hex}}  {{!noop}}             ctermfg=03  {{!noop}}   {{!noop}}  {{!noop}}
+
+" Diffs
+DiffAdd      guifg={{base0B-hex}}  guibg={{base01-hex}}  ctermfg=02  ctermbg=10  {{!noop}}  {{!noop}}
+DiffChange   guifg={{base03-hex}}  guibg={{base01-hex}}  ctermfg=08  ctermbg=10  {{!noop}}  {{!noop}}
+DiffDelete   guifg={{base08-hex}}  guibg={{base01-hex}}  ctermfg=01  ctermbg=10  {{!noop}}  {{!noop}}
+DiffText     guifg={{base0D-hex}}  guibg={{base01-hex}}  ctermfg=04  ctermbg=10  {{!noop}}  {{!noop}}
+DiffAdded    guifg={{base0B-hex}}  guibg={{base00-hex}}  ctermfg=02  ctermbg=00  {{!noop}}  {{!noop}}
+DiffFile     guifg={{base08-hex}}  guibg={{base00-hex}}  ctermfg=01  ctermbg=00  {{!noop}}  {{!noop}}
+DiffNewFile  guifg={{base0B-hex}}  guibg={{base00-hex}}  ctermfg=02  ctermbg=00  {{!noop}}  {{!noop}}
+DiffLine     guifg={{base0D-hex}}  guibg={{base00-hex}}  ctermfg=04  ctermbg=00  {{!noop}}  {{!noop}}
+DiffRemoved  guifg={{base08-hex}}  guibg={{base00-hex}}  ctermfg=01  ctermbg=00  {{!noop}}  {{!noop}}
+
+let s:cterm00 = "00"
+let s:cterm01 = "10"
+let s:cterm02 = "11"
+let s:cterm03 = "08"
+let s:cterm04 = "12"
+let s:cterm05 = "07"
+let s:cterm06 = "13"
+let s:cterm07 = "15"
+let s:cterm08 = "01"
+let s:cterm09 = "09"
+let s:cterm0A = "03"
+let s:cterm0B = "02"
+let s:cterm0C = "06"
+let s:cterm0D = "04"
+let s:cterm0E = "05"
+let s:cterm0F = "14"
+
+" TODO: add colors.
+SpellBad   ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=undercurl gui=undercurl guisp={{base08-hex}}
+SpellCap   ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=undercurl gui=undercurl guisp={{base0C-hex}}
+SpellLocal ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=undercurl gui=undercurl guisp={{base0D-hex}}
+SpellRare  ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=undercurl gui=undercurl guisp={{base0E-hex}}
+
+" vim: ft=vim et sw=2 sts=2
