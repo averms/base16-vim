@@ -1,6 +1,3 @@
 default: 
     extension: .vim
     output: colors
-minimal:
-    extension: -minimal.vim
-    output: colors
