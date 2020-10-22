@@ -3,11 +3,11 @@
 a-vrma's fork of the Base16 Vim template. This fork has a number of
 improvements:
 
-- Faster because it uses the actual builtin Vim commands rather than defined
+- Faster because it uses the actual Vim commands rather than defined
   functions.
-- Cleaner because it doesn't unnecessarily override highlight groups. The
-  upstream template even sets colors for some highlight groups that don't
-  exist.
+- Cleaner because it doesn't unnecessarily override highlight groups. It also
+  doesn't set colors for highlight groups that don't exist. The upstream
+  template does that with, for example, `Bold` and `Italic`.
 - Includes a fix for a Neovim bug with CursorLine
   (https://github.com/neovim/neovim/issues/9019).
 - Instead of having the generated themes in the `colors/` directory as upstream
