@@ -1,9 +1,20 @@
 # TODO
 
 - Look into using more colors for spelling.
-- Test diff highlighting.
 - Don't need htmlBold and markdownBold etc. because already done by syntax
   files.
+- The following highlight groups:
+  * PmenuSbar
+  * PmenuThumb
+  * Menu
+  * Scrollbar
+  * Tooltip
+  * debugPC
+  * debugBreakpoint
+  * NormalNC
+  * NormalFloat
+  * TermCursor
+  * TermCursorNC
 
 - Look at documentation in lifepillar/vim-colortemplate
   There is some good stuff about making sure colorschemes don't mess
