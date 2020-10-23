@@ -54,7 +54,7 @@ hi CursorLineNr guifg=#{{base04-hex}} guibg=#{{base01-hex}} ctermfg=12 ctermbg=1
 
 " Hacky workaround for Neovim bug. Adapted from
 " https://github.com/neovim/neovim/issues/9019#issuecomment-521532103.
-if has('gui_running') || &termguicolors
+if has('gui_running') || &termguicolors || exists('g:gonvim_running')
   hi CursorLine {{!noop}}     guibg=#{{base01-hex}} ctermfg=white ctermbg=10 gui=NONE cterm=NONE
 else
   hi CursorLine guifg=#FFFFFF guibg=#{{base01-hex}} {{!noop}}     ctermbg=10 gui=NONE cterm=NONE
