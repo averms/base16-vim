@@ -41,3 +41,8 @@ augroup END
 
 colorscheme base16-classic-dark
 ```
+
+## Future development
+
+See TODO.md. If you have any improvements to suggest, feel free to open an
+issue.
