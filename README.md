@@ -14,10 +14,8 @@ improvements:
   does, they are distributed using GitHub releases.
 
 This fork does not support `base16-shell`. This is because I don't use it and I
-don't know how to add support for it. If you would like to add it, patches are
-welcome. For a user, this means you will have to change your terminal emulator
-settings too if you want to use a Vim without `termguicolors`. Fortunately, the
-entire point of the base16 project is to make this easy.
+don't think it is possible to add support for it in the way I wrote the
+template. It also isn't necessary now that Vim has support for `termguicolors`.
 
 ## Installation
 
