@@ -89,11 +89,22 @@ hi Todo         guifg=#{{base0A-hex}} guibg=NONE ctermfg=03 ctermbg=NONE {{!noop
 hi Type         guifg=#{{base0A-hex}} {{!noop}}  ctermfg=03 {{!noop}}    gui=NONE  cterm=NONE
 hi Typedef      guifg=#{{base0A-hex}} {{!noop}}  ctermfg=03 {{!noop}}    {{!noop}} {{!noop}}
 
-" Diffs
+" Vimdiff
 hi DiffAdd    guifg=#{{base0B-hex}} guibg=#{{base01-hex}} ctermfg=02 ctermbg=10 gui=NONE cterm=NONE
 hi DiffChange guifg=#{{base03-hex}} guibg=#{{base01-hex}} ctermfg=08 ctermbg=10 gui=NONE cterm=NONE
 hi DiffDelete guifg=#{{base08-hex}} guibg=#{{base01-hex}} ctermfg=01 ctermbg=10 gui=NONE cterm=NONE
 hi DiffText   guifg=#{{base0D-hex}} guibg=#{{base01-hex}} ctermfg=04 ctermbg=10 gui=NONE cterm=NONE
+
+" ft-diff
+hi link diffBDiffer WarningMsg
+hi link diffCommon WarningMsg
+hi link diffDiffer WarningMsg
+hi link diffIdentical WarningMsg
+hi link diffIsA WarningMsg
+hi link diffNoEOL WarningMsg
+hi link diffOnly WarningMsg
+hi link diffRemoved WarningMsg
+hi link diffAdded String
 
 " Spelling
 hi SpellBad   ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=underline gui=underline guisp=#{{base08-hex}}
