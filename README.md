@@ -1,6 +1,6 @@
 # Base16 Vim Minimal
 
-a-vrma's fork of the Base16 Vim template. This fork has a number of
+My fork of the Base16 Vim template. This fork has a number of
 improvements:
 
 - Faster because it uses the actual Vim commands rather than defined
