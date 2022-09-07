@@ -1,4 +1,4 @@
-Copyright (C) 2012 Chris Kempson <http://chriskempson.com>\
+Copyright (C) 2012 Chris Kempson <http://chriskempson.com>
 Copyright (C) 2020 Aman Verma <https://aman.raoverma.com/contact.html>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
